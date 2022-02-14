@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  --clr-bg: #1F2937;
+  --clr-btn: #3882F6;
+  --clr-quote-bg: #E5E7EB;
+
+  --clr-text-main: #F9FAF8;
+  --clr-text-secondary: #E5E7EB;
+  --clr-text-logo: ;
+  --clr-text-info: #1F2937;
+  --clr-text-quote: #1F2937;
+
+  --fs-main: 3rem;
+
+}
