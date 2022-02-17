@@ -4,17 +4,139 @@
   padding: 0;
 }
 
-.root {
+/* --TYPOGRAPHY-- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
   --clr-bg: #1F2937;
   --clr-btn: #3882F6;
   --clr-quote-bg: #E5E7EB;
 
   --clr-text-main: #F9FAF8;
   --clr-text-secondary: #E5E7EB;
-  --clr-text-logo: ;
+  --clr-text-logo: #F9FAF8;
   --clr-text-info: #1F2937;
   --clr-text-quote: #1F2937;
 
-  --fs-main: 3rem;
+  --fs-hero-title: 3rem;
+  --fs-info-title: 2.25rem;
+  --fs-logo: 2rem;
+  --fs-hero-text: 1.5rem;
 
+  --ff-main: 'Roboto', sans-serif;
+}
+
+/* --LAYOUT-- */
+
+/* header */
+.header {
+  background: var(--clr-bg);
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+}
+
+.logo {
+  margin-left: 10vw;
+
+  color: var(--clr-text-logo);
+  font-family: var(--ff-main);
+}
+
+.navbar {
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.link {
+  color: var(--clr-text-secondary);
+  font-family: var(--ff-main);
+  font-size: var(--fs-hero-text);
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+/* hero section */
+.hero-section {
+  background-color: var(--clr-bg);
+  display: flex;
+  padding: 2rem 1rem;
+}
+
+.hero-container,
+.img-container {
+  width: 50%;
+}
+
+.hero-container {
+  margin-left: 10vw;
+  margin-right: 5rem;
+}
+
+.img-container {
+  margin-right: 10vw;
+  align-items: auto;
+}
+
+.hero-img {
+  height: 15rem;
+  width: 100%;
+}
+
+.hero-title {
+  color: var(--clr-text-main);
+  font-family: var(--ff-main);
+  font-size: var(--fs-hero-title);
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  color: var(--clr-text-secondary);
+  font-family: var(--ff-main);
+  font-size: var(--fs-hero-text);
+  margin-bottom: 1rem;
+}
+
+.sign-up {
+  background: var(--clr-btn);
+  border: var(--clr-btn);
+  border-radius: 10px;
+  color: var(--clr-text-main);
+  font-size: var(--fs-hero-text);
+  padding: 0.5rem 2rem;
+}
+
+/* info section */
+.info-section {
+
+}
+
+
+/* quote section */
+.quote-section {
+  background: var(--clr-quote-bg);
+}
+
+
+/* call to action section */
+.call-section {
+
+}
+
+
+/* footer */
+.footer {
+  background: var(--clr-bg);
+  color: var(--clr-text-secondary);
+  font-family: var(--ff-main);
+  font-size: var(--fs-hero-text);
+  padding: 1rem;
+  text-align: center;
 }
